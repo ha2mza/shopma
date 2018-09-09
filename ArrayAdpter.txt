@@ -1,6 +1,0 @@
- DatabaseHandler datasource = new DatabaseHandler(this);
-        List<Contact> datadisplay = datasource.getAllContacts();
-        ArrayAdapter<Contact> adapter = new ArrayAdapter<Contact>(this,android.R.layout.simple_spinner_item, datadisplay);
-        //ContactListAdapter adapter = new ContactListAdapter(MainActivity.this, datadisplay);
-        Spinner myList = (Spinner) findViewById(R.id.main_download_list);
-        myList.setAdapter(adapter);
