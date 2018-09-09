@@ -6,17 +6,11 @@
         <a class="navbar-brand" href="{{ url('/') }}">
 
             <span>
-                 <img src="{{ asset('assets/images/logo-light-text.png') }}" style="height: 66px;" alt="homepage"
-                      class="dark-logo"/>
-                 <img src="{{ asset('assets/images/logo-light-text.png') }}" style="height: 66px;" class="light-logo"
-                      alt="homepage"/>
+
             </span>
 
             <b>
-                <img src="{{ asset('assets/images/4me-icon-gdpr.png') }}" style="width: 50px;" alt="homepage"
-                     class="dark-logo"/>
-                <img src="{{ asset('assets/images/4me-icon-gdpr.png') }}" style="width: 50px;" alt="homepage"
-                     class="light-logo"/>
+
             </b>
         </a>
     </div>
@@ -186,13 +180,8 @@
                 <a class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark" href="index.html"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-message"></i>
                     <div class="notify">
-                        @php
-                            $registre_violdcps = \App\Registre_violdcp::where('REGVIOLDCP_ISACTIVE', 1)->where('USER_SENT',null)->orderBy('REGVIOLDCP_CREATED', 'desc')->get();
-                        @endphp
-                        @if($registre_violdcps->count() > 0)
-                            <span class="heartbit"></span>
-                            <span class="point"></span>
-                        @endif
+                        <span class="heartbit"></span>
+                        <span class="point"></span>
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right mailbox scale-up">
@@ -202,33 +191,6 @@
                         </li>
                         <li>
                             <div class="message-center">
-                                @foreach($registre_violdcps as $registre_violdcp)
-                                    @if(\Carbon\Carbon::now()->diffInHours($registre_violdcp->REGVIOLDCP_DATE) > 8)
-                                        <a href="{{ route('SHOW-REGISTRE_VIOLD',['id'=>$registre_violdcp->REGVIOLDCP_CODE]) }}">
-                                            <div class="user-img">
-                                                <span class="profile-status busy pull-right"></span>
-                                            </div>
-                                            <div class="mail-contnet">
-                                                <h5>
-                                                    {{  $registre_violdcp->REGVIOLDCP_DESI }}</h5>
-                                                <span class="mail-desc">{{ $registre_violdcp->REGVIOLDCP_DESC }}</span>
-                                                <span class="time">{{ $registre_violdcp->REGVIOLDCP_DATE }}</span>
-                                            </div>
-                                        </a>
-                                    @else
-                                        <a href="{{ route('SHOW-REGISTRE_VIOLD',['id'=>$registre_violdcp->REGVIOLDCP_CODE]) }}">
-                                            <div class="user-img">
-                                                <span class="profile-status away pull-right"></span>
-                                            </div>
-                                            <div class="mail-contnet">
-                                                <h5>
-                                                    {{  $registre_violdcp->REGVIOLDCP_DESI }}</h5>
-                                                <span class="mail-desc">{{ $registre_violdcp->REGVIOLDCP_DESC }}</span>
-                                                <span class="time">{{ $registre_violdcp->REGVIOLDCP_DATE }}</span>
-                                            </div>
-                                        </a>
-                                    @endif
-                                @endforeach
                             </div>
                         </li>
                         <li>
@@ -310,16 +272,17 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="index.html"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                            src="/assets/images/users/profile.png" alt="user" class="profile-pic"/></a>
+                            src="/images/users/profile.png" alt="user" class="profile-pic"/></a>
                 <div class="dropdown-menu dropdown-menu-right scale-up">
                     <ul class="dropdown-user">
                         <li>
                             <div class="dw-user-box">
-                                <div class="u-img"><img src="/assets/images/users/profile.png" alt="user"></div>
+                                <div class="u-img"><img src="/images/users/profile.png" alt="user"></div>
                                 <div class="u-text">
-                                    <h4>{{Auth::user()->USE_NAME}}</h4>
-                                    <p class="text-muted"> {{Auth::user()->roles->first()['name']}}</p><a href="javascript:void(0)"
-                                                                                        class="btn btn-rounded btn-danger btn-sm">View
+                                    <h4> AAA </h4>
+                                    <p class="text-muted"> AAA </p><a
+                                            href="javascript:void(0)"
+                                            class="btn btn-rounded btn-danger btn-sm">View
                                         Profile</a></div>
                             </div>
                         </li>
@@ -332,15 +295,11 @@
                         <li role="separator" class="divider"></li>
                         <li>
 
-                            <a href="{{ route('logout') }}"
+                            <a href="#"
                                onclick="event.preventDefault();document.getElementById('logout-form1').submit();">
                                 <i class="fa fa-power-off"></i>
                                 Logout
                             </a>
-                            <form id="logout-form1" action="{{ route('logout') }}" method="POST"
-                                  style="display: none;">
-                                {{ csrf_field() }}
-                            </form>
 
                     </ul>
                 </div>

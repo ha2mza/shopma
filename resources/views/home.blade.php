@@ -16,12 +16,11 @@
     <meta name="keywords" content="admin,dashboard">
     <meta name="author" content="stacks">
     <!-- Title -->
-    <title> GDPR | @yield('title')</title>
-    <link rel="icon" type="image/ico" href="{{ asset('assets/images/4me-icon-gdpr.png') }}"/>
+    <title> shopma | @yield('title')</title>
     <!-- Bootstrap Core CSS -->
-    <link href="{{ asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!--This page css - Morris CSS -->
-    <link href="{{ asset('assets/plugins/c3-master/c3.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/c3-master/c3.min.css') }}" rel="stylesheet">
 @yield('css')
 <!-- Custom CSS -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
@@ -237,10 +236,10 @@
 <!-- ============================================================== -->
 <!-- All Jquery -->
 <!-- ============================================================== -->
-<script src="{{ asset('assets/plugins/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap tether Core JavaScript -->
-<script src="{{ asset('assets/plugins/popper/popper.min.js') }}"></script>
-<script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('plugins/popper/popper.min.js') }}"></script>
+<script src="{{ asset('plugins/bootstrap/js/bootstrap.min.js') }}"></script>
 <!-- slimscrollbar scrollbar JavaScript -->
 <script src="{{ asset('js/jquery.slimscroll.js') }}"></script>
 <!--Wave Effects -->
@@ -248,23 +247,23 @@
 <!--Menu sidebar -->
 <script src="{{ asset('js/sidebarmenu.js') }}"></script>
 <!--stickey kit -->
-<script src="{{ asset('assets/plugins/sticky-kit-master/dist/sticky-kit.min.js') }}"></script>
-<script src="{{ asset('assets/plugins/sparkline/jquery.sparkline.min.js') }}"></script>
+<script src="{{ asset('plugins/sticky-kit-master/dist/sticky-kit.min.js') }}"></script>
+<script src="{{ asset('plugins/sparkline/jquery.sparkline.min.js') }}"></script>
 <!--Custom JavaScript -->
 <script src="{{ asset('js/custom.min.js') }}"></script>
 <!-- ============================================================== -->
 <!-- This page plugins -->
 <!-- ============================================================== -->
 <!--c3 JavaScript -->
-<script src="{{ asset('assets/plugins/d3/d3.min.js') }}"></script>
-<script src="{{ asset('assets/plugins/c3-master/c3.min.js') }}"></script>
+<script src="{{ asset('plugins/d3/d3.min.js') }}"></script>
+<script src="{{ asset('plugins/c3-master/c3.min.js') }}"></script>
 <!-- ============================================================== -->
 
 @yield('js')
 
 <!-- Style switcher -->
 <!-- ============================================================== -->
-<script src="{{ asset('assets/plugins/styleswitcher/jQuery.style.switcher.js') }}"></script>
+<script src="{{ asset('plugins/styleswitcher/jQuery.style.switcher.js') }}"></script>
 <script>
     $(function () {
         $('[type="submit"]').click(function (e) {
