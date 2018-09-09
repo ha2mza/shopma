@@ -15,12 +15,12 @@
     <meta name="description" content="Responsive Admin Dashboard Template">
     <meta name="keywords" content="admin,dashboard">
     <meta name="author" content="stacks">
-    <link rel="icon" type="image/ico" href="{{ asset('assets/images/4me-icon-gdpr.png') }}"/>
+    <link rel="icon" type="image/ico" href="{{ asset('images/4me-icon-gdpr.png') }}"/>
     <!-- Title -->
     <title>{{ config('app.name','GDPR') }}</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     @yield('css')
     <!-- Custom CSS -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
@@ -56,10 +56,10 @@
 <!-- ============================================================== -->
 <!-- All Jquery -->
 <!-- ============================================================== -->
-<script src="{{ asset('assets/plugins/jquery/jquery.min.js') }} "></script>
+<script src="{{ asset('plugins/jquery/jquery.min.js') }} "></script>
 <!-- Bootstrap tether Core JavaScript -->
-<script src="{{ asset('assets/plugins/popper/popper.min.js') }} "></script>
-<script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.min.js') }} "></script>
+<script src="{{ asset('plugins/popper/popper.min.js') }} "></script>
+<script src="{{ asset('plugins/bootstrap/js/bootstrap.min.js') }} "></script>
 <!-- slimscrollbar scrollbar JavaScript -->
 <script src="{{ asset('js/jquery.slimscroll.js') }} "></script>
 <!--Wave Effects -->
@@ -67,15 +67,15 @@
 <!--Menu sidebar -->
 <script src="{{ asset('js/sidebarmenu.js') }} "></script>
 <!--stickey kit -->
-<script src="{{ asset('assets/plugins/sticky-kit-master/dist/sticky-kit.min.js') }} "></script>
-<script src="{{ asset('assets/plugins/sparkline/jquery.sparkline.min.js') }} "></script>
+<script src="{{ asset('plugins/sticky-kit-master/dist/sticky-kit.min.js') }} "></script>
+<script src="{{ asset('plugins/sparkline/jquery.sparkline.min.js') }} "></script>
 <!--Custom JavaScript -->
 <script src="{{ asset('js/custom.min.js') }} "></script>
 <!-- ============================================================== -->
 @yield('js')
 <!-- Style switcher -->
 <!-- ============================================================== -->
-<script src="{{ asset('assets/plugins/styleswitcher/jQuery.style.switcher.js') }} "></script>
+<script src="{{ asset('plugins/styleswitcher/jQuery.style.switcher.js') }} "></script>
 
 </body>
 </html>

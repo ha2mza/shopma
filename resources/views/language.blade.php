@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('css')
-    <link href="{{ asset('assets/plugins/select2/dist/css/select2.min.css')}}" rel="stylesheet"/>
+    <link href="{{ asset('plugins/select2/dist/css/select2.min.css')}}" rel="stylesheet"/>
 @endsection
 @section('js')
-    <script src="{{ asset('assets/plugins/select2/dist/js/select2.full.min.js')}}"></script>
+    <script src="{{ asset('plugins/select2/dist/js/select2.full.min.js')}}"></script>
     <script>
         $(function () {
             $("#CLI_CODE").select2({
