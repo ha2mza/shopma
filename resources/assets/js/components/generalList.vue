@@ -11,6 +11,14 @@
             <h6 class="card-subtitle">List Des Client</h6>
             <div class="table-responsive m-t-40">
                 <table id="tableclient" class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
                 </table>
             </div>
         </div>
@@ -18,9 +26,18 @@
 </template>
 
 <script>
+    var $ = require('jquery');
+    require('datatables.net-responsive-bs4')($);
+   $("#tableclient").DataTable();
     export default {
-        mounted() {
-            console.log('Component mounted.')
+        name: "generalList",
+        data: {
+            // clients array
+
         }
     }
 </script>
+
+<style scoped>
+
+</style>
