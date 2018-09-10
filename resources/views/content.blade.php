@@ -13,7 +13,7 @@
     </style>
 @endsection
 @section('content')
-
+<example-component></example-component>
 @stop
 
 
